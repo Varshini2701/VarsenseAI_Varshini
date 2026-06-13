@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Alice Smith", "designation": "AI Engineer", "hourly_rate": 85.0 },
+  { "id": 2, "name": "Bob Johnson", "designation": "Data Scientist", "hourly_rate": 90.0 },
+  { "id": 3, "name": "Charlie Brown", "designation": "Frontend Developer", "hourly_rate": 70.0 },
+  { "id": 4, "name": "Diana Prince", "designation": "Backend Developer", "hourly_rate": 75.0 },
+  { "id": 5, "name": "Evan Wright", "designation": "Product Manager", "hourly_rate": 100.0 },
+  { "id": 6, "name": "Fiona Gallagher", "designation": "UX Designer", "hourly_rate": 65.0 },
+  { "id": 7, "name": "George Miller", "designation": "DevOps Engineer", "hourly_rate": 80.0 },
+  { "id": 8, "name": "Hannah Abbott", "designation": "QA Engineer", "hourly_rate": 60.0 },
+  { "id": 9, "name": "Ian Malcolm", "designation": "Machine Learning Engineer", "hourly_rate": 95.0 },
+  { "id": 10, "name": "Julia Roberts", "designation": "Scrum Master", "hourly_rate": 85.0 }
+]
