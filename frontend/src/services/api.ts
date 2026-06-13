@@ -52,7 +52,7 @@ export interface AgentReport {
   content: string;
 }
 
-const API_BASE_URL = 'http://127.0.0.1:8000/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || (import.meta.env.PROD ? '/api' : 'http://127.0.0.1:8000/api');
 
 export const fetchProjects = async (): Promise<Project[]> => {
   const response = await fetch(`${API_BASE_URL}/projects`);
