@@ -15,25 +15,36 @@ VarsenseAI
 
 ## Problem Statement Selected
 
-[Please select one: "HR Cost Intelligence Engine" OR "Intelligent Slack Knowledge Base"]
+HR Cost Intelligence Engine
 
 ---
 
 ## Project Description
 
-VarsenseAI is an intelligent full-stack application built with React and FastAPI to provide actionable, AI-driven insights via a comprehensive dashboard.
-[Add more details here about: What the project is about, who it's for, what problem it solves, and how it helps the user]
+VarsenseAI is an intelligent full-stack dashboard application built with React and FastAPI to provide actionable, AI-driven financial insights. 
+
+**What is the project about?**
+It is an HR Cost Intelligence Engine that tracks the "hidden" financial costs of corporate meetings and automatically attributes those costs to specific projects using AI.
+
+**Who is it for?**
+It is designed for executives, project managers, and finance teams who want better visibility into operational spending and resource allocation.
+
+**What problem does it solve?**
+Countless hours are spent in meetings without being explicitly linked to project budgets. This app solves the problem of untracked HR costs by dynamically calculating the exact financial cost of every meeting (based on attendees' hourly rates and meeting duration). 
+
+**How does it help the user?**
+It uses Google Gemini AI to analyze meeting titles and descriptions to intelligently categorize them by project. It also features an autonomous AI Agent that scans all dashboard data to highlight "Cost Anomalies" (e.g., a project burning too much budget on meetings), delivering concise executive insights.
 
 ---
 
 ## Approach
 
-[Explain how you approached the problem. You can include:
-* How you understood the problem
-* What user flow you designed
-* What features you decided to build
-* How AI is used in your solution
-* What makes your approach useful or different]
+* **Understanding the Problem:** I realized that to accurately track hidden HR costs, the system needed both precise calculation logic (duration × employee rates) and intelligent categorization, as meeting data is often unstructured.
+* **User Flow & Features:** I designed a centralized dashboard flow where a user can immediately see high-level KPIs (Total HR Cost, Average Meeting Cost), view monthly trends via Recharts, and see exactly when expensive meetings occurred using React Big Calendar.
+* **AI Integration:** Instead of manual data entry, I integrated the Google Gemini API in two distinct ways:
+  1. **Attribution Engine:** To process unstructured meeting descriptions and confidently assign them to active projects.
+  2. **Executive Agent:** To autonomously read the structured cost data and write a punchy markdown report identifying financial anomalies.
+* **What makes it different:** The seamless combination of a fast RESTful API (FastAPI), a highly interactive frontend (Vite/React), and dual-layer AI integration makes the platform feel like a proactive financial advisor rather than just a passive tracking tool.
 
 ---
 
@@ -77,7 +88,7 @@ VarsenseAI is an intelligent full-stack application built with React and FastAPI
 
 ## Screenshots or Demo
 
-**Deployed Link:** [Add Link]
+**Deployed Link:** https://varsense-ai-varshini-tosd.vercel.app/
 **Demo Video Link:** [Add Link]
 **Screenshots:** [Add Links or Images]
 
