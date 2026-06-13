@@ -68,6 +68,30 @@ if not all_costs:
     st.stop()
 
 df_costs = pd.DataFrame(all_costs)
+df_costs['date_obj'] = pd.to_datetime(df_costs['date']).dt.date
+
+# Add Date Filter
+st.sidebar.header("Filters")
+min_date = df_costs['date_obj'].min()
+max_date = df_costs['date_obj'].max()
+
+date_range = st.sidebar.date_input(
+    "Select Date Range for Analysis",
+    value=(min_date, max_date),
+    min_value=min_date,
+    max_value=max_date
+)
+
+if len(date_range) == 2:
+    start_date, end_date = date_range
+    df_costs = df_costs[(df_costs['date_obj'] >= start_date) & (df_costs['date_obj'] <= end_date)]
+elif len(date_range) == 1:
+    start_date = date_range[0]
+    df_costs = df_costs[df_costs['date_obj'] == start_date]
+
+if df_costs.empty:
+    st.warning("No meetings found in this date range. Please select a wider range.")
+    st.stop()
 
 # KPI Cards
 st.subheader("Key Performance Indicators")
