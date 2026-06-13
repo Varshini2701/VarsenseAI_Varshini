@@ -55,7 +55,7 @@ It uses Google Gemini AI to analyze meeting titles and descriptions to intellige
 **Database:** Local JSON (Mock Data)
 **AI Tools/API:** Google Gemini API (google-generativeai)
 **Cloud/Deployment:** [Add cloud platform if deployed, e.g., Vercel, Render]
-**Other Tools:** Git, GitHub
+**Other Tools:**https://github.com/Varshini2701/varsense-insight-deck.git)
 
 ---
 
@@ -88,8 +88,8 @@ It uses Google Gemini AI to analyze meeting titles and descriptions to intellige
 
 ## Screenshots or Demo
 
-**Deployed Link:** https://varsense-ai-varshini-tosd.vercel.app/
-**Demo Video Link:** [Add Link]
+**Deployed Link:** https://preview--varsense-insight-deck.lovable.app/
+**Demo Video Link:**(https://drive.google.com/file/d/1etxKVcFvbXbsqNJmoUFuPC2InZSajSOG/view?usp=drive_link)
 **Screenshots:** [Add Links or Images]
 
 ---
